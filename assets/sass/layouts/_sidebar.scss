@@ -1,0 +1,82 @@
+/*sidebar style start*/
+.side-widget {
+  @extend %box-shadow;
+  border: 1px solid $primary;
+  border-top: 5px solid $primary;
+  margin-bottom: 1rem;
+  background: #fff;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  overflow: hidden;
+  ul{
+    li{
+      text-transform: capitalize;
+      display: block;
+      font-size: 1em;
+      padding: 5px 10px;
+      border-bottom: 1px dashed $primary;
+      span{
+        float: right;
+      }
+      a{
+        display: block;
+        &:hover{
+          font-weight: 600;
+        }
+      }
+    }
+    li:last-child{
+      border: none;
+    }
+  }
+  h3 {
+    @extend %section-title;
+    background: initial;
+    background-image: url('../../assets/images/bg-0.png');
+    i{
+      color: $primary;
+    }
+  }
+  .notice-board{
+    border: none;
+  }
+  .wid-cont{
+    p:nth-child(2n-1){
+      background: $bg-color;
+    }
+    p{
+      padding: 10px;
+      margin: 0;
+      i{
+        color: $primary;
+        margin-right: 10px;
+      }
+      span{
+        float: right;
+        display: none;
+        cursor: pointer;
+        transition: all .5s;
+      }
+      &:hover span{
+        display: block;
+        transition: all .5s;
+      }
+    }
+    overflow: hidden;
+  }
+  marquee{
+    height: 200px;
+    padding: 0 15px;
+    a{
+      display: block;
+      padding: 10px 0;
+      border-bottom: 1px solid #ddd;
+    }
+  };
+  .theme-btn a{
+    border-right: initial;
+    border-bottom: initial;
+  }
+}
+
+/*sidebar style end*/

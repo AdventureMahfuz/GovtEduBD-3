@@ -1,0 +1,70 @@
+/*communication page start*/
+.communication-section {
+  .institute-info {
+    position: relative;
+    margin-bottom: 35px;
+    background: $background;
+    @extend %box-shadow;
+    border-radius: 50%;
+    padding: 25px 0;
+    &:after {
+      position: absolute;
+      content: "";
+      left: 50%;
+      bottom: -7px;
+      width: 15px;
+      height: 15px;
+      background: #CC5E01;
+      z-index: 10;
+      @include transform(rotate(45deg));
+    }
+    h2 {
+      color: #fff;
+      text-transform: capitalize;
+    }
+    p {
+      color: #fff;
+    }
+  }
+  .table-title {
+    h2 {
+      @extend %section-title;
+      @extend %section-title-two;
+      margin-top: 40px;
+      margin-bottom: 15px;
+    }
+  }
+  strong {
+    margin-top: 35px;
+    font-size: 1.2em;
+  }
+  table {
+    width: 100%;
+    border: 1px solid #dee2e6;
+    @extend %box-shadow;
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    thead {
+      background: $primary;
+      color: #ffffff;
+      tr {
+        th {
+          padding: 10px 5px;
+        }
+      }
+    }
+    tbody {
+      tr {
+        td {
+          padding: 7px;
+        }
+      }
+      tr:nth-child(2n-1) {
+        background: $bg-color;
+      }
+    }
+  }
+}
+
+/*communication page end*/

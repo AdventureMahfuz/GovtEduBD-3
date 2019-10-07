@@ -1,0 +1,228 @@
+/*Medium Layout: 1280*/
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+    .main-navigation ul#nav li a {
+        padding: 10px 20px;
+    }
+
+    .gallerys .single-gallery {
+        width: 32.75%;
+    }
+}
+
+/*Tablet Layout: 768px*/
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    /*front page start*/
+    body {
+        font-size: 1em;
+    }
+
+    .institute-info h2 {
+        font-size: 1.2em;
+    }
+
+    .gallerys .single-gallery {
+        width: 32.75%;
+    }
+
+    .articles .single-article .article-cont .article-meta ul li {
+        font-size: .875em;
+    }
+
+    .header-section .institute-info h2 {
+        font-size: 1.2em;
+        padding-top: 5px;
+    }
+
+    .header-section a .logo {
+        margin-top: 0;
+    }
+
+    .main-navigation ul#nav li a {
+        padding: 8px 12px;
+    }
+
+    .communication-section .table-title h2, .single-page-post-area .single-title h2, .gallery-title h2, .testimonial-section .testimonial-title h2, .blog-title h2, .teacher-section .section-title h2 {
+        padding: 10px 50px;
+        font-size: 1.6em;
+    }
+
+    .footer-section .footer-top-section .f-widget h3 {
+        font-size: 1.3em;
+    }
+    .footer-section .footer-top-section .f-widget .contact-information .single-contact-info .contact-info-content p{
+        font-size: .875em;
+    }
+    /*front page end*/
+    /*single page start*/
+    .single-page-post-area .single-page-thumb{
+        width: 300px;
+    }
+    /*single page end*/
+}
+
+/*Mobile Layout: 320px*/
+@media only screen and (max-width: 767px) {
+    .sticky-area-mobile-view {
+        display: block;
+    }
+    .footer-section{
+        margin-bottom: 65px;
+    }
+    /*front page start*/
+    .logo {
+        text-align: center;
+        width: 100%;
+    }
+
+    .logo img {
+        width: initial;
+    }
+    .lecture .thumb{
+        height: 300px;
+    }
+    .institute-info p {
+        margin-bottom: 0;
+    }
+
+    .main-navigation {
+        display: none;
+    }
+
+    .single-slider {
+        height: 250px;
+    }
+
+    .lecture {
+        margin-bottom: 35px;
+    }
+
+    .gallerys .single-gallery {
+        width: 100%;
+    }
+    .mobile-gallery-filter-menu{
+        display: block;
+    }
+    .gallery-filter-menu{
+        display: none;
+    }
+    .articles .single-article {
+        margin-bottom: 35px;
+    }
+
+    .style-2-gallery-items .single-s2g-item {
+        width: 100%;
+        height: 200px;
+    }
+    .testimonial-section .testimonials .single-testimonial .testimonial-thumb, .teacher-section .all-teacher .single-teacher .teacher-thumb, .articles .admission .admission-thumb{
+        height: 300px;
+    }
+    .testimonial-section .testimonials .single-testimonial .testimonial-cont, .teacher-section .all-teacher .single-teacher .teacher-bio, .articles .admission .admission-cont{
+        padding: 10px;
+    }
+    .contact-map-area .contact-information {
+        position: initial;
+        right: initial;
+        top: initial;
+        transform: initial;
+        width: 100%;
+    }
+
+    .contact-map-area .contact-information:after {
+        opacity: initial;
+    }
+    .header-section .institute-info {
+        text-align: center;
+        display: block;
+    }
+
+    .header-section .institute-info h2 {
+        font-size: 1.2em;
+    }
+
+    .social-link {
+        text-align: center;
+        display: block;
+        margin-bottom: 25px;
+    }
+
+    .header-section a .logo {
+        margin: 10px 0;
+    }
+
+    .single-slider h4 {
+        width: 100%;
+        left: 0;
+        bottom: 0;
+        font-size: 1em;
+    }
+
+    .communication-section .table-title h2, .single-page-post-area .single-title h2, .gallery-title h2, .testimonial-section .testimonial-title h2, .blog-title h2, .teacher-section .section-title h2 {
+        font-size: 1.4em;
+        padding: 10px 50px;
+    }
+    .footer-section .footer-bottom-section p a img {
+        width: 20%;
+    }
+    /*front page end*/
+    /*single page start*/
+    .single-page-post-area {
+        display: flex;
+        flex-flow: column;
+    }
+
+    .single-page-post-title {
+        order: 1;
+    }
+
+    .single-page-thumb {
+        order: 2;
+    }
+
+    .single-page-post-content {
+        order: 3;
+    }
+    .single-page-post-area .single-page-thumb{
+        width: 100%;
+        margin-left: 0;
+    }
+    .single-title h2{
+        text-align: center;
+        display: block;
+        width: 100%;
+    }
+    .single-page-post-content p{
+        text-align: justify;
+    }
+    /*single page end*/
+    /*communication page start*/
+    .communication-section .institute-info h2 {
+        font-size: 1.2em;
+    }
+    /*communication page end*/
+
+    /*contact us page start*/
+    .contact-form, .form-wrapper {
+        box-shadow: initial;
+        padding: initial;
+    }
+
+    .contact-information {
+        display: block;
+        width: 100%;
+        position: initial;
+        transform: initial;
+        background: #993300;
+        padding: 25px 0;
+        margin-top: 45px;
+    }
+
+    .contact-information:after {
+        position: initial;
+    }
+
+    /*contact us page end*/
+}
+
+/*Wide Mobile Layout: 480px*/
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+}

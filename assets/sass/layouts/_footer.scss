@@ -1,0 +1,101 @@
+/*footer style start*/
+.footer-section{
+  .footer-top-section{
+    background: $background;
+    padding: 15px 0;
+    .f-widget{
+      iframe{
+        width: 100%;
+        height: 250px;
+      }
+      h3{
+        @extend %section-title;
+        @extend %box-shadow;
+        margin-bottom: 25px;
+      }
+      ul{
+        li{
+          a{
+            color: #ffffff;
+            display: block;
+            padding: 5px;
+            border-bottom: 1px dashed #fff;
+            &:hover{
+              opacity: .8;
+              color: #000000;
+            }
+          }
+        }
+        li:last-child a{
+          border-bottom: none;
+        }
+      }
+      .contact-informations {
+        .single-contact-info {
+          margin: 5px 0;
+          .contact-info-icon {
+            display: inline-block;
+            float: left;
+            overflow: hidden;
+            i {
+              color: #fff;
+              width: 50px;
+              height: 50px;
+              border: 1px solid #fff;
+              text-align: center;
+              line-height: 50px;
+              margin-right: 10px;
+              border-radius: 50%;
+            }
+          }
+          .contact-info-content {
+            p {
+              color: #fff;
+              font-size: 1em;
+              a {
+                color: #fff;
+              }
+            }
+          }
+        }
+      }
+      .contact-map-area{
+        @extend %box-shadow;
+        overflow: hidden;
+      }
+    }
+    /*contact us section end*/
+  }
+
+
+  .footer-bottom-section{
+    background: $primary;
+    border-top: 2px solid #fff;
+    &:before{
+      background: none;
+      height: 0;
+    }
+    &:after{
+      background: none;
+      height: 0;
+    }
+    p{
+      text-transform: capitalize;
+      color: #fff;
+      margin: 0;
+      padding: 10px 0;
+      a{
+        font-weight: 700;
+        color: #fff;
+        opacity: .7;
+        &:hover{
+          opacity: 1;
+        }
+        img{
+          width: 7%;
+        }
+      }
+    }
+  }
+}
+/*footer style end*/

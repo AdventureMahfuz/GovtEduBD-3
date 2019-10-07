@@ -1,0 +1,52 @@
+/*contact us section start*/
+
+/*.contact-map-area {
+  position: relative;
+  .contact-information {
+    display: inline-block;
+    position: absolute;
+    right: 10%;
+    top: 50%;
+    z-index: 1;
+    transform: translate(-10%, -50%);
+    width: 350px;
+    &:after {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background: $background;
+      z-index: -1;
+      content: "";
+      opacity: .6;
+    }
+    .single-contact-info {
+      margin: 25px;
+      .contact-info-icon {
+        display: inline-block;
+        float: left;
+        overflow: hidden;
+        i {
+          color: #fff;
+          width: 50px;
+          height: 50px;
+          border: 1px solid #fff;
+          text-align: center;
+          line-height: 50px;
+          margin-right: 10px;
+          border-radius: 50%;
+        }
+      }
+      .contact-info-content {
+        p {
+          color: #fff;
+          a {
+            color: #fff;
+          }
+        }
+      }
+    }
+  }
+}*/
+/*contact us section end*/

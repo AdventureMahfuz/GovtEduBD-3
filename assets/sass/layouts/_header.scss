@@ -1,0 +1,128 @@
+/*header section start*/
+.header-section{
+  .top-banner {
+    background: $background;
+    position: relative;
+  }
+  a{
+    .logo {
+      display: inline-block;
+      float: left;
+      margin-right: 10px;
+    }
+  }
+  .institute-info {
+    padding: 10px 0;
+    display: inline-block;
+    h2 {
+      font-size: 1.6em;
+      font-weight: 700;
+      margin: 0;
+      text-transform: capitalize;
+      color: #ffffff;
+    }
+    p {
+      color: #fff;
+    }
+  }
+}
+
+.social-link {
+  margin-top: 17px;
+  text-align: right;
+  p{
+    margin: 0;
+    color: #ffffff;
+  }
+}
+
+.overlay {
+  @extend %absolute;
+  background: #000;
+  opacity: .3;
+}
+
+.main-navigation {
+  background: $primary;
+  border-top: 2px solid #fff;
+  ul#nav {
+    text-align: center;
+    li {
+      display: inline-block;
+      a {
+        color: #ffffff;
+        padding: 5px 35px;
+        display: block;
+        opacity: 1;
+        transition: all .5s;
+        &:hover {
+          background: $background;
+          transition: all .5s;
+          border-top-right-radius: 30px;
+          border-bottom-right-radius: 30px;
+        }
+      }
+    }
+    li.active{
+      a{
+        background: $background;
+        border-top-right-radius: 30px;
+        border-bottom-right-radius: 30px;
+      }
+    }
+    li.sub-items {
+      position: relative;
+      &:hover ul {
+        display: block;
+      }
+      ul {
+        position: absolute;
+        left: 0;
+        width: 280px;
+        background: $primary;
+        text-align: left;
+        z-index: 2;
+        display: none;
+        li {
+          display: block;
+          a {
+            padding: 10px;
+            border-bottom: 1px solid #fff;
+            display: block;
+          }
+        }
+      }
+    }
+  }
+}
+
+section.latest-notice {
+  background: $bg-color;
+  border-bottom: 1px solid $primary;
+  border-top: 1px solid $primary;
+  &:before{
+    background: none;
+  }
+  &:after{
+    background: none;
+  }
+  span {
+    position: absolute;
+    z-index: 2;
+    background: $background;
+    padding: 4px 15px;
+    color: #ffffff;
+  }
+  a {
+    color: $primary;
+    text-transform: capitalize;
+    position: relative;
+    top: 4px;
+    margin-right: 15px;
+    &:hover{
+      color: $gray;
+    }
+  }
+}
+
+/*header section end*/

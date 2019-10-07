@@ -1,0 +1,41 @@
+/*breadcrumb section start*/
+.breadcrumb-section{
+  position: relative;
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  z-index: 1;
+  .overlay{
+    @extend %absolute;
+    background: #000000;
+    opacity: .9;
+    z-index: -1;
+  }
+  ul{
+    z-index: 10;
+    li{
+      display: inline-block;
+      padding: 10px;
+      color: #fff;
+      opacity: 0.8;
+      a{
+        color: #fff;
+        font-weight: 700;
+        opacity: 0.8;
+        &:hover{
+          color: $primary;
+          opacity: 1;
+        }
+      }
+    }
+  }
+  h2{
+    color: #fff;
+    font-weight: 700;
+    margin: 0;
+    padding: 10px;
+    opacity: 0.8;
+  }
+}
+/*breadcrumb section end*/

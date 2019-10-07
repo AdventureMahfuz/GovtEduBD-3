@@ -1,0 +1,107 @@
+/*common style start*/
+body#front_page {
+  background-image: url('../images/body-bg.png');
+  background-repeat: repeat;
+  background-attachment: fixed;
+}
+/*body{
+  background: $bg-color;
+}*/
+.section-padding {
+  padding: 35px 0;
+}
+
+.table-cell {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: $dark;
+}
+
+a {
+  color: $gray;
+}
+
+a:hover {
+  color: $primary;
+}
+
+span.date {
+  font-size: 0.8em;
+  color: $primary;
+  display: block;
+  text-align: right;
+}
+
+.social-link a {
+  color: $primary;
+}
+
+.theme-btn {
+  a {
+    position: relative;
+    color: $primary;
+    border: 1px solid $primary;
+    display: inline-block;
+    padding: 5px 15px;
+    z-index: 1;
+    &:after {
+      @extend %absolute;
+      content: "";
+      width: 0;
+      background: $background;
+      transition: all .5s;
+      z-index: -1;
+    }
+    &:hover:after {
+      width: 100%;
+    }
+    &:hover {
+      color: #ffffff;
+    }
+  }
+}
+
+.back_to_top i.fa {
+  position: fixed;
+  right: 25px;
+  bottom: 75px;
+  width: 35px;
+  height: 35px;
+  background: $primary;
+  text-align: center;
+  color: #fff;
+  line-height: 35px;
+  cursor: pointer;
+  display: none;
+  box-shadow: 0 0 10px #999;
+  border-radius: 50%;
+  z-index: 9999;
+}
+
+/*common style end*/
+
+/*
+=============================================================================
+scroll bar style for chrome
+==============================================================================
+*/
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 5px #000;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: $primary;
+}
+
+/*
+=============================================================================
+scroll bar style for chrome
+==============================================================================
+*/

@@ -1,0 +1,152 @@
+.overlay {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/*color variables start*/
+/*color variables end*/
+/*Default style start*/
+body {
+  font-family: "Merriweather", "SolaimanLipi", sans-serif;
+  font-size: 1.1em;
+  line-height: 1.6em;
+  color: #4a4a4a;
+}
+
+a:hover, a:focus {
+  text-decoration: none;
+  outline: none;
+}
+
+img {
+  border: none;
+  width: 100%;
+  height: auto;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/*Default style end*/
+/*common style start*/
+/*h1,h2,h3,h4,h5,h6{
+  color: $dark;
+}*/
+span.date {
+  font-size: 0.8em;
+  color: #737373;
+}
+
+.social-link a {
+  color: #1643D0;
+}
+
+/*common style end*/
+/*header section start*/
+.top-banner {
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+  position: relative;
+}
+
+.institute-info {
+  padding: 10px 0;
+}
+.institute-info h2 {
+  font-weight: 400;
+  margin: 0;
+  text-transform: capitalize;
+  color: #ffffff;
+  opacity: 0.7;
+}
+.institute-info p {
+  color: #fff;
+  opacity: 0.7;
+}
+
+.logo {
+  display: inline-block;
+  margin-top: 15px;
+}
+
+.social-link {
+  margin-top: 40px;
+  text-align: right;
+}
+.social-link ul li {
+  display: inline-block;
+}
+.social-link ul li a {
+  width: 30px;
+  height: 30px;
+  background: #fff;
+  display: block;
+  text-align: center;
+  line-height: 30px;
+  border-radius: 5px;
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+  transition: all 0.5s;
+}
+.social-link ul li a:hover {
+  transform: scale(1.1);
+}
+
+.overlay {
+  background: #000;
+  opacity: 0.3;
+}
+
+.main-navigation {
+  background: #1643D0;
+}
+.main-navigation ul#nav {
+  text-align: center;
+}
+.main-navigation ul#nav li {
+  display: inline-block;
+}
+.main-navigation ul#nav li a {
+  color: #ffffff;
+  padding: 10px 35px;
+  display: block;
+  opacity: 1;
+}
+.main-navigation ul#nav li a:hover {
+  opacity: 0.7;
+}
+.main-navigation ul#nav li.sub-items {
+  position: relative;
+}
+.main-navigation ul#nav li.sub-items:hover ul {
+  display: block;
+}
+.main-navigation ul#nav li.sub-items ul {
+  position: absolute;
+  left: 0;
+  width: 280px;
+  background: #1643D0;
+  text-align: left;
+  z-index: 2;
+  display: none;
+}
+.main-navigation ul#nav li.sub-items ul li {
+  display: block;
+}
+.main-navigation ul#nav li.sub-items ul li a {
+  padding: 10px;
+  border-bottom: 1px solid #fff;
+  display: block;
+}
+
+/*header section end*/
+
+/*# sourceMappingURL=style.scss.map */

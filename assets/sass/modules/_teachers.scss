@@ -1,11 +1,5 @@
 /*teacher section style start*/
 .teacher-section {
-  .section-title {
-    text-align: center;
-    h2 {
-      @extend %text-gradient;
-    }
-  }
   .all-teacher {
     .single-teacher {
       border: 1px solid $primary;
@@ -61,18 +55,8 @@
       }
     }
     .owl-nav {
-      text-align: right;
-      margin-top: 30px;
-      button {
-        &:focus {
-          outline: none;
-        }
-        span {
-          @extend %owl-span;
-          background: $primary;
-          color: #ffffff;
-        }
-      }
+     @extend %owl-nav;
+      @extend %slider-control;
     }
   }
 }

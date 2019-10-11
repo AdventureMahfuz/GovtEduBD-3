@@ -6,8 +6,9 @@ single page start
 .single-page-post-area{
   .single-title{
     h2{
-      @extend %section-title;
-      @extend %section-title-two;
+      font-size: 1.1em;
+      margin-bottom: 15px;
+      font-weight: 700;
     }
   }
   .single-page-thumb {

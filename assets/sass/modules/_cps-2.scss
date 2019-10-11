@@ -1,0 +1,36 @@
+/*category post style 2 start*/
+
+  .small-spa {
+    @extend %box-shadow;
+    margin: 5px;
+    overflow: hidden;
+    @include transform(scale(1));
+    transition: all .5s;
+    &:hover{
+      @include transform(scale(1.05));
+      transition: all .5s;
+    }
+    .thumb {
+      width: 100%;
+      height: 100%;
+      -webkit-background-size: cover;
+      background-size: cover;
+      background-position: center center;
+    }
+    .spc {
+      padding: 10px 0;
+      h3 {
+        font-size: 1.1em;
+        font-weight: 400;
+        margin: 0;
+        &:hover{
+          color: $primary;
+        }
+      }
+      p {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+/*category post style 2 end*/

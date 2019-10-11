@@ -1,23 +1,10 @@
 /*slider section start*/
 .slider-area {
   .owl-nav {
-    position: absolute;
+    @extend %owl-nav;
     right: 10px;
     top: 10px;
-    button {
-      &:focus {
-        outline: none;
-      }
-      span {
-        width: 30px;
-        height: 30px;
-        line-height: 30px;
-        background: $primary;
-        text-align: center;
-        color: #fff;
-        display: block;
-      }
-    }
+    @extend %slider-control;
   }
 }
 
@@ -44,11 +31,14 @@
     height: auto;
     margin: 0;
     padding: 5px 10px;
-    color: #ffffff;
+    color: #ffffff !important;
     display: inline-block;
     z-index: 1;
     opacity: .7;
     font-size: 1.1em;
+    span{
+      color: #ffffff;
+    }
     &:after {
       @extend %absolute;
       content: "";
@@ -69,8 +59,12 @@
   overflow: hidden;
   h3 {
     @extend %section-title;
-    background: initial;
-    background-image: url('../../assets/images/bg-0.png');
+    background: #fff;
+    box-shadow: 0 5px 5px #999;
+    display: block;
+    margin-bottom: 5px;
+    color: $dark;
+    text-align: center;
     i{
       color: $primary;
     }

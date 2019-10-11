@@ -1,10 +1,5 @@
 /*testimonial section start*/
 .testimonial-section {
-  .testimonial-title {
-    h2 {
-      @extend %text-gradient;
-    }
-  }
   .testimonials {
     .single-testimonial {
       margin: 10px;
@@ -39,18 +34,8 @@
       }
     }
     .owl-nav{
-      text-align: right;
-      margin-top: 10px;
-      button{
-        &:focus{
-          outline: none;
-        }
-        span{
-          @extend %owl-span;
-          background: $primary;
-          color: #ffffff;
-        }
-      }
+      @extend %owl-nav;
+      @extend %slider-control;
     }
   }
 }

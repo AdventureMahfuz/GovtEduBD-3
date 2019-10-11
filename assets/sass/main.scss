@@ -11,9 +11,12 @@
 @import "layouts/_sidebar.scss";
 
 @import "modules/_mobile-menubar.scss";
-@import "modules/_slider.scss";
+@import "modules/slider";
 @import "modules/breadcrumb";
-@import "modules/_teachers.scss";
+@import "modules/cps-1";
+@import "modules/cps-2";
+@import "modules/tab-widget";
+@import "modules/teachers";
 @import "modules/_blog.scss";
 @import "modules/_testimonial.scss";
 @import "modules/_gallery-style-2.scss";

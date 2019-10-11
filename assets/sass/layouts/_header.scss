@@ -9,6 +9,8 @@
       display: inline-block;
       float: left;
       margin-right: 10px;
+      margin-top: 15px;
+      width: 80px;
     }
   }
   .institute-info {
@@ -23,16 +25,37 @@
     }
     p {
       color: #fff;
+      margin: 0;
     }
   }
 }
 
 .social-link {
-  margin-top: 17px;
+  margin-top: 20px;
   text-align: right;
-  p{
-    margin: 0;
-    color: #ffffff;
+  h4{
+    color: #fff;
+    text-transform: capitalize;
+    font-size: 1em;
+  }
+  ul {
+    li {
+      display: inline-block;
+      a {
+        width: 30px;
+        height: 30px;
+        background: #fff;
+        display: block;
+        text-align: center;
+        line-height: 30px;
+        border-radius: 5px;
+        @include transform(scale(1));
+        transition: all .5s;
+        &:hover {
+          transform: scale(1.1);
+        }
+      }
+    }
   }
 }
 
@@ -77,8 +100,8 @@
       }
       ul {
         position: absolute;
-        left: 0;
-        width: 280px;
+        right: 0;
+        width: 250px;
         background: $primary;
         text-align: left;
         z-index: 2;

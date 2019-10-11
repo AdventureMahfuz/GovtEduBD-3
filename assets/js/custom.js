@@ -88,6 +88,35 @@
         });
 
 
+        //category post style 1 slider
+        $('.cps-1-slider').owlCarousel({
+            loop: true,
+            margin: 30,
+            autoplay: true,
+            autoplayHoverPause: true,
+            responsiveClass: true,
+            nav: true,
+            dots: false,
+            mouseDrag: true,
+            touchDrag: true,
+            responsive: {
+                0: {
+                    items: 1,
+                    nav: true
+                },
+                768: {
+                    items: 2,
+                    nav: true
+                },
+                1000: {
+                    items: 3,
+                    nav: true,
+                    loop: true
+                }
+            }
+        });
+
+
         //teacher slider
         $('.all-teacher').owlCarousel({
             loop: true,
@@ -137,8 +166,12 @@
                     items: 1,
                     nav: true
                 },
+                991: {
+                    items: 2,
+                    nav: true
+                },
                 1000: {
-                    items: 1,
+                    items: 2,
                     nav: true,
                     loop: true
                 }

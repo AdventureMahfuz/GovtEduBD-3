@@ -1,0 +1,49 @@
+/*tab widget start*/
+.tab-widget {
+  margin-bottom: 15px;
+  ul {
+    text-align: center;
+    display: block;
+    margin-bottom: 20px;
+    li {
+      display: inline-block;
+      a {
+        font-weight: 400;
+        display: block;
+        padding: 5px 10px;
+        border: 1px solid $primary;
+        color: #ffffff;
+        background: $primary;
+      }
+      a.active {
+        font-weight: 600;
+        color: $primary;
+        background: initial;
+      }
+    }
+  }
+}
+
+.twpl {
+  ul {
+    text-align: initial;
+    border: 1px solid $primary;
+    li {
+      display: block;
+      a {
+        border: initial;
+        border-bottom: 1px solid $primary;
+        color: $dark;
+        background: initial;
+        &:hover{
+          color: $primary;
+        }
+      }
+    }
+    li:last-child a{
+      border-bottom: initial;
+    }
+  }
+}
+
+/*tab widget end*/

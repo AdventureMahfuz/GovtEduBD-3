@@ -4,9 +4,15 @@ body#front_page {
   background-repeat: repeat;
   background-attachment: fixed;
 }
-/*body{
-  background: $bg-color;
-}*/
+
+.section-title {
+  border-bottom: 1px solid $primary;
+  margin: 5px 5px 10px;
+  h2 {
+    @extend %section-title;
+  }
+}
+
 .section-padding {
   padding: 35px 0;
 }

@@ -1,7 +1,7 @@
 /*color variables start*/
 /*$background: linear-gradient(to right, #6666ff, #ff2dbc, #a8eb12);*/
 /*color variables end*/
-.gallery-title h2, .section-title h2, .testimonial-section .testimonial-title h2, .blog-title h2, .teacher-section .section-title h2 {
+.gallery-title h2, .blog-title h2 {
   background: -webkit-linear-gradient(90deg, #000001 0%, #1a5be6 0%, #d33bb3 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -12,7 +12,7 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }*/
-.lecture .l-content:before, .style-2-gallery-items .single-s2g-item .s2g-popup-icon:after, .style-2-gallery-items .single-s2g-item .s2g-popup-icon i, .teacher-section .all-teacher .single-teacher .teacher-bio .teacher-info, .teacher-section .all-teacher .single-teacher .teacher-bio:after, .teacher-section .all-teacher .single-teacher .teacher-bio, .breadcrumb-section .overlay, .single-slider h4:after, .overlay, .theme-btn a:after {
+.style-2-gallery-items .single-s2g-item .s2g-popup-icon:after, .style-2-gallery-items .single-s2g-item .s2g-popup-icon i, .teacher-section .all-teacher .single-teacher .teacher-bio .teacher-info, .teacher-section .all-teacher .single-teacher .teacher-bio:after, .teacher-section .all-teacher .single-teacher .teacher-bio, .spa .spc:before, .breadcrumb-section .overlay, .single-slider h4:after, .overlay, .theme-btn a:after {
   position: absolute;
   left: 0;
   top: 0;
@@ -20,18 +20,20 @@
   height: 100%;
 }
 
-.footer-section .footer-top-section .f-widget h3, .communication-section .table-title h2, .single-page-post-area .single-title h2, .notice-board h3, .side-widget h3 {
-  text-align: center;
-  background: #FFFF99;
-  color: #212121;
+.footer-section .footer-top-section .f-widget h3, .communication-section .table-title h2, .notice-board h3, .side-widget h3, .section-title h2 {
   font-weight: 300;
+  border-bottom: 1px solid #ddd;
+  display: inline-block;
+  background: #993300;
+  color: #ffffff;
+  padding: 5px 10px;
   margin: 0;
-  padding: 10px;
-  box-shadow: 0 2px 5px #999;
-  margin-bottom: 5px;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  font-size: 25px;
 }
 
-.communication-section .table-title h2, .single-page-post-area .single-title h2, .gallery-title h2, .section-title h2, .testimonial-section .testimonial-title h2, .blog-title h2, .teacher-section .section-title h2 {
+.communication-section .table-title h2, .gallery-title h2, .blog-title h2 {
   display: inline-block;
   margin-bottom: 25px;
   padding: 10px 100px;
@@ -49,17 +51,28 @@
   border-bottom: 2px solid $gray;
   margin-bottom: 25px;
 }*/
-.footer-section .footer-top-section .f-widget .contact-map-area, .footer-section .footer-top-section .f-widget h3, .communication-section table, .communication-section .institute-info, .lecture, .testimonial-section .testimonials .single-testimonial, .articles .admission, .articles .single-article, .teacher-section .all-teacher .single-teacher, .notice-board, .single-slider, .side-widget, .communication-section .table-title h2, .single-page-post-area .single-title h2, .gallery-title h2, .section-title h2, .testimonial-section .testimonial-title h2, .blog-title h2, .teacher-section .section-title h2 {
+.footer-section .footer-top-section .f-widget .contact-map-area, .footer-section .footer-top-section .f-widget h3, .communication-section table, .communication-section .institute-info, .testimonial-section .testimonials .single-testimonial, .articles .admission, .articles .single-article, .teacher-section .all-teacher .single-teacher, .small-spa, .spa, .notice-board, .single-slider, .side-widget, .communication-section .table-title h2, .gallery-title h2, .blog-title h2 {
   box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
   border-radius: 10px;
 }
 
-.testimonial-section .testimonials .owl-nav button span, .teacher-section .all-teacher .owl-nav button span {
-  display: block;
+.testimonial-section .testimonials .owl-nav, .teacher-section .all-teacher .owl-nav, .cps-1-slider .owl-nav, .slider-area .owl-nav {
+  position: absolute;
+  right: 5px;
+  top: -42px;
+}
+
+.testimonial-section .testimonials .owl-nav button:focus, .teacher-section .all-teacher .owl-nav button:focus, .cps-1-slider .owl-nav button:focus, .slider-area .owl-nav button:focus {
+  outline: none;
+}
+.testimonial-section .testimonials .owl-nav button span, .teacher-section .all-teacher .owl-nav button span, .cps-1-slider .owl-nav button span, .slider-area .owl-nav button span {
   width: 30px;
   height: 30px;
-  text-align: center;
   line-height: 30px;
+  background: #993300;
+  text-align: center;
+  color: #fff;
+  display: block;
 }
 
 /*color variables start*/
@@ -98,9 +111,10 @@ body#front_page {
   background-attachment: fixed;
 }
 
-/*body{
-  background: $bg-color;
-}*/
+.section-title {
+  border-bottom: 1px solid #993300;
+  margin: 5px 5px 10px;
+}
 .section-padding {
   padding: 35px 0;
 }
@@ -204,6 +218,8 @@ scroll bar style for chrome
   display: inline-block;
   float: left;
   margin-right: 10px;
+  margin-top: 15px;
+  width: 80px;
 }
 .header-section .institute-info {
   padding: 10px 0;
@@ -218,15 +234,36 @@ scroll bar style for chrome
 }
 .header-section .institute-info p {
   color: #fff;
+  margin: 0;
 }
 
 .social-link {
-  margin-top: 17px;
+  margin-top: 20px;
   text-align: right;
 }
-.social-link p {
-  margin: 0;
-  color: #ffffff;
+.social-link h4 {
+  color: #fff;
+  text-transform: capitalize;
+  font-size: 1em;
+}
+.social-link ul li {
+  display: inline-block;
+}
+.social-link ul li a {
+  width: 30px;
+  height: 30px;
+  background: #fff;
+  display: block;
+  text-align: center;
+  line-height: 30px;
+  border-radius: 5px;
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+  transition: all 0.5s;
+}
+.social-link ul li a:hover {
+  transform: scale(1.1);
 }
 
 .overlay {
@@ -270,8 +307,8 @@ scroll bar style for chrome
 }
 .main-navigation ul#nav li.sub-items ul {
   position: absolute;
-  left: 0;
-  width: 280px;
+  right: 0;
+  width: 250px;
   background: #993300;
   text-align: left;
   z-index: 2;
@@ -346,8 +383,12 @@ section.latest-notice a:hover {
   border: none;
 }
 .side-widget h3 {
-  background: initial;
-  background-image: url("../../assets/images/bg-0.png");
+  background: #fff;
+  box-shadow: 0 5px 5px #999;
+  display: block;
+  margin-bottom: 5px;
+  color: #212121;
+  text-align: center;
 }
 .side-widget h3 i {
   color: #993300;
@@ -513,21 +554,8 @@ ul.mobile-menu li a {
 /*mobile view menubar end*/
 /*slider section start*/
 .slider-area .owl-nav {
-  position: absolute;
   right: 10px;
   top: 10px;
-}
-.slider-area .owl-nav button:focus {
-  outline: none;
-}
-.slider-area .owl-nav button span {
-  width: 30px;
-  height: 30px;
-  line-height: 30px;
-  background: #993300;
-  text-align: center;
-  color: #fff;
-  display: block;
 }
 
 .single-slider {
@@ -553,11 +581,14 @@ ul.mobile-menu li a {
   height: auto;
   margin: 0;
   padding: 5px 10px;
-  color: #ffffff;
+  color: #ffffff !important;
   display: inline-block;
   z-index: 1;
   opacity: 0.7;
   font-size: 1.1em;
+}
+.single-slider h4 span {
+  color: #ffffff;
 }
 .single-slider h4:after {
   content: "";
@@ -575,8 +606,12 @@ ul.mobile-menu li a {
   overflow: hidden;
 }
 .notice-board h3 {
-  background: initial;
-  background-image: url("../../assets/images/bg-0.png");
+  background: #fff;
+  box-shadow: 0 5px 5px #999;
+  display: block;
+  margin-bottom: 5px;
+  color: #212121;
+  text-align: center;
 }
 .notice-board h3 i {
   color: #993300;
@@ -633,10 +668,156 @@ ul.mobile-menu li a {
 }
 
 /*breadcrumb section end*/
-/*teacher section style start*/
-.teacher-section .section-title {
-  text-align: center;
+/*category post style 1 start*/
+.spa {
+  background: linear-gradient(to right, #993300, #FF8902);
+  overflow: hidden;
+  margin: 5px;
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+  transition: all 0.5s;
 }
+.spa:hover {
+  -webkit-transform: scale(1.05);
+  -ms-transform: scale(1.05);
+  transform: scale(1.05);
+  transition: all 0.5s;
+}
+.spa .thumb {
+  height: 285px;
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-position: center center;
+  border-bottom-left-radius: 50%;
+}
+.spa .spc {
+  padding: 10px 20px;
+  height: 100%;
+  padding-bottom: 70px;
+  background: #ffffff;
+  border-radius: 0;
+  position: relative;
+}
+.spa .spc:before {
+  content: "";
+  left: 25px;
+  top: -8px;
+  width: 15px;
+  height: 15px;
+  border-left: 1px solid rgba(0, 0, 0, 0.2);
+  background: #ffffff;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+  border-top: 1px solid rgba(0, 0, 0, 0.2);
+  z-index: 10;
+}
+.spa .spc h3 {
+  font-size: 1.1em;
+  font-weight: 700;
+  margin: 0;
+}
+.spa .spc p {
+  margin-bottom: 0;
+}
+.spa .spc ul {
+  padding: 10px 0;
+}
+.spa .spc ul li {
+  margin-right: 10px;
+}
+.spa .spc ul li a i {
+  color: #993300;
+}
+
+/*category post style 1 end*/
+/*category post style 2 start*/
+.small-spa {
+  margin: 5px;
+  overflow: hidden;
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+  transition: all 0.5s;
+}
+.small-spa:hover {
+  -webkit-transform: scale(1.05);
+  -ms-transform: scale(1.05);
+  transform: scale(1.05);
+  transition: all 0.5s;
+}
+.small-spa .thumb {
+  width: 100%;
+  height: 100%;
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-position: center center;
+}
+.small-spa .spc {
+  padding: 10px 0;
+}
+.small-spa .spc h3 {
+  font-size: 1.1em;
+  font-weight: 400;
+  margin: 0;
+}
+.small-spa .spc h3:hover {
+  color: #993300;
+}
+.small-spa .spc p {
+  margin-bottom: 0;
+}
+
+/*category post style 2 end*/
+/*tab widget start*/
+.tab-widget {
+  margin-bottom: 15px;
+}
+.tab-widget ul {
+  text-align: center;
+  display: block;
+  margin-bottom: 20px;
+}
+.tab-widget ul li {
+  display: inline-block;
+}
+.tab-widget ul li a {
+  font-weight: 400;
+  display: block;
+  padding: 5px 10px;
+  border: 1px solid #993300;
+  color: #ffffff;
+  background: #993300;
+}
+.tab-widget ul li a.active {
+  font-weight: 600;
+  color: #993300;
+  background: initial;
+}
+
+.twpl ul {
+  text-align: initial;
+  border: 1px solid #993300;
+}
+.twpl ul li {
+  display: block;
+}
+.twpl ul li a {
+  border: initial;
+  border-bottom: 1px solid #993300;
+  color: #212121;
+  background: initial;
+}
+.twpl ul li a:hover {
+  color: #993300;
+}
+.twpl ul li:last-child a {
+  border-bottom: initial;
+}
+
+/*tab widget end*/
+/*teacher section style start*/
 .teacher-section .all-teacher .single-teacher {
   border: 1px solid #993300;
   overflow: hidden;
@@ -686,18 +867,6 @@ ul.mobile-menu li a {
 .teacher-section .all-teacher .single-teacher .teacher-bio .teacher-info p {
   color: #fff;
 }
-.teacher-section .all-teacher .owl-nav {
-  text-align: right;
-  margin-top: 30px;
-}
-.teacher-section .all-teacher .owl-nav button:focus {
-  outline: none;
-}
-.teacher-section .all-teacher .owl-nav button span {
-  background: #993300;
-  color: #ffffff;
-}
-
 /*teacher section style end*/
 /*blog section style start*/
 .articles .blog-tab-nav {
@@ -835,18 +1004,6 @@ ul.mobile-menu li a {
   color: #737373;
   font-size: 1em;
 }
-.testimonial-section .testimonials .owl-nav {
-  text-align: right;
-  margin-top: 10px;
-}
-.testimonial-section .testimonials .owl-nav button:focus {
-  outline: none;
-}
-.testimonial-section .testimonials .owl-nav button span {
-  background: #993300;
-  color: #ffffff;
-}
-
 /*testimonial section end*/
 /*gallery style two section style start*/
 .style-2-gallery-items {
@@ -937,53 +1094,6 @@ ul.mobile-menu li a {
   }
 }*/
 /*contact us section end*/
-/*front page style start*/
-.lecture {
-  background: linear-gradient(to right, #993300, #FF8902);
-}
-.lecture .thumb {
-  height: 210px;
-  -webkit-background-size: cover;
-  background-size: cover;
-  background-position: center center;
-  border-top-right-radius: 50%;
-}
-.lecture .l-content {
-  padding: 10px 20px;
-  height: 100%;
-  padding-bottom: 70px;
-  background: #ffffff;
-  border-radius: 0;
-  position: relative;
-}
-.lecture .l-content:before {
-  content: "";
-  left: 85px;
-  top: -8px;
-  width: 15px;
-  height: 15px;
-  border-left: 1px solid rgba(0, 0, 0, 0.2);
-  background: #ffffff;
-  -webkit-transform: rotate(45deg);
-  -ms-transform: rotate(45deg);
-  transform: rotate(45deg);
-  border-top: 1px solid rgba(0, 0, 0, 0.2);
-  z-index: 10;
-}
-.lecture .l-content h3 {
-  font-size: 1.1em;
-  font-weight: 700;
-  margin: 0;
-}
-.lecture .l-content p {
-  margin-bottom: 0;
-}
-.lecture .l-content p span {
-  color: #737373;
-  font-weight: 600;
-}
-
-/*front page style end*/
 /**
 ================================================================================
 gallery section start
@@ -1063,7 +1173,7 @@ gallery section start
 }
 .gallerys .single-gallery {
   position: relative;
-  width: 32.85%;
+  width: 32.75%;
   display: block;
   float: left;
   margin: 2px;
@@ -1165,6 +1275,11 @@ gallery page end
 single page start
 ================================================================================
 */
+.single-page-post-area .single-title h2 {
+  font-size: 1.1em;
+  margin-bottom: 15px;
+  font-weight: 700;
+}
 .single-page-post-area .single-page-thumb {
   position: relative;
   display: inline-block;
@@ -1364,7 +1479,7 @@ button#contact-btn {
 }
 .footer-section .footer-top-section .f-widget iframe {
   width: 100%;
-  height: 250px;
+  height: auto;
 }
 .footer-section .footer-top-section .f-widget h3 {
   margin-bottom: 25px;

@@ -31,8 +31,12 @@
   }
   h3 {
     @extend %section-title;
-    background: initial;
-    background-image: url('../../assets/images/bg-0.png');
+    background: #fff;
+    box-shadow: 0 5px 5px #999;
+    display: block;
+    margin-bottom: 5px;
+    color: $dark;
+    text-align: center;
     i{
       color: $primary;
     }

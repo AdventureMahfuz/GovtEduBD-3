@@ -5,7 +5,14 @@
     }
 
     .gallerys .single-gallery {
-        width: 32.75%;
+        width: 32.65%;
+    }
+    .tab-widget ul li a {
+        padding: 2px;
+    }
+
+    .testimonial-section .testimonials .single-testimonial {
+        border-top-left-radius: 10px;
     }
 }
 
@@ -42,14 +49,13 @@
     }
 
     .communication-section .table-title h2, .single-page-post-area .single-title h2, .gallery-title h2, .testimonial-section .testimonial-title h2, .blog-title h2, .teacher-section .section-title h2 {
-        padding: 10px 50px;
         font-size: 1.6em;
     }
 
     .footer-section .footer-top-section .f-widget h3 {
         font-size: 1.3em;
     }
-    .footer-section .footer-top-section .f-widget .contact-information .single-contact-info .contact-info-content p{
+    .footer-section .footer-top-section .f-widget .contact-informations .single-contact-info .contact-info-content p{
         font-size: .875em;
     }
     /*front page end*/
@@ -68,12 +74,20 @@
     .footer-section{
         margin-bottom: 65px;
     }
-    /*front page start*/
-    .logo {
-        text-align: center;
-        width: 100%;
+    .section-padding {
+        padding: 20px 0;
     }
-
+    /*front page start*/
+    .header-section a .logo {
+        width: 100%;
+        text-align: center;
+    }
+    .small-spa .spc h3 {
+        padding: 10px;
+    }
+    .tab-widget{
+        margin-top: 25px;
+    }
     .logo img {
         width: initial;
     }
